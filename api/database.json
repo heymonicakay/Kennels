@@ -6,13 +6,37 @@
           "breed": "Poodle",
           "customerId": 1,
           "locationId": 2
-      }
+      },
+      {
+        "id": 2,
+        "name": "Kaos",
+        "breed": "Aussie-Shep",
+        "customerId": 2,
+        "locationId": 1
+    },
+    {
+      "id": 3,
+      "name": "Rufus",
+      "breed": "Basset",
+      "customerId": 3,
+      "locationId": 2
+  }
   ],
   "customers": [
       {
-          "id": 1,
-          "name": "Hannah Hall",
-          "address": "7002 Chestnut Ct"
+        "id": 1,
+        "name": "Hannah Hall",
+        "address": "7002 Chestnut Ct"
+      },
+      {
+        "id": 2,
+        "name": "Monica Kay",
+        "address": "555 Old Hickory Blvd"
+      },
+      {
+        "id": 3,
+        "name": "Ryan Citrino",
+        "address": "444 Eastland Dr"
       }
   ],
   "employees": [
@@ -20,7 +44,17 @@
       "id": 1,
       "name": "Mario Kart",
       "address": "7002 Rainbow Road"
-  }
+    },
+    {
+      "id": 2,
+      "name": "Mark Rufullo",
+      "address": "222 Vape Station"
+    },
+    {
+      "id": 3,
+      "name": "Luke Bryan",
+      "address": "123 No Way"
+    }
   ],
   "locations": [
       {
