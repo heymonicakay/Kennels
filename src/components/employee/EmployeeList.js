@@ -18,23 +18,23 @@ export const EmployeeList = (props) => {
 
     return (
       <div className="employees">
-      <h1>Employees</h1>
+      <h2>Employees</h2>
       <button className="btn add-emp-btn" onClick={() => props.history.push("/employees/create")}>
           Add Employee
       </button>
 
       <article className="employeeList">
-          {employees.map(employee =>
-            { const pet = animals.find(a => a.id === employee.animalId) || {}
-              const kennel = locations.find(l => l.id === employee.locationId) || {}
+          {employees.map(e =>
+            { const pet = animals.find(a => a.id === e.animalId) || {}
+              const kennel = locations.find(l => l.id === e.locationId) || {}
               return <Employee
-                key={employee.id}
-                employee={employee}
+                key={e.id}
+                employee={e}
                 animal={pet}
                 location={kennel}/>
             })
           }
       </article>
-  </div>
+      </div>
     )
 }

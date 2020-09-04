@@ -1,13 +1,12 @@
 .animals {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: left;
+  padding: 0 1rem
 }
 
 .animal-card {
-  display: flex;
-  flex-flow: column;
-  flex-basis: 15%;
+  flex-basis: 20%;
   margin: 1em;
   padding: 1em;
   border: 1px solid rgb(163, 59, 59);
@@ -19,6 +18,14 @@
   overflow-y: scroll;
 }
 
+.animalList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  padding: 0 0;
+  margin: 0 0;
+}
+
 .animal__details {
   padding: 0 .5rem;
 }
@@ -27,3 +34,9 @@
   justify-self: center;
   align-self: center;
 }
+
+.add-pet-btn {
+  width: 50%;
+  height: auto;
+}
+

@@ -29,11 +29,5 @@
 .add-emp-btn {
   width: 50%;
   height: auto;
-  border:none;
-  background-color:rgb(163, 59, 59);
-  color: white;
 }
 
-.employee-form {
-  justify-content: center;
-}
