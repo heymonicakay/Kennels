@@ -1,12 +1,39 @@
 .employees {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-flow: column wrap;
+  justify-content: left;
+  padding: 0 1rem;
 }
 
 .employee {
-    flex-basis: 28%;
-    margin: 1em;
-    padding: 1em;
-    border: 1px solid goldenrod;
+  flex-basis: 20%;
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid rgb(163, 59, 59);
+}
+
+.employee-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.employeeList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.add-emp-btn {
+  width: 50%;
+  height: auto;
+  border:none;
+  background-color:rgb(163, 59, 59);
+  color: white;
+}
+
+.employee-form {
+  justify-content: center;
 }

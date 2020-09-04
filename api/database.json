@@ -1,18 +1,18 @@
 {
   "animals": [
-      {
-          "id": 1,
-          "name": "Doodles",
-          "breed": "Poodle",
-          "customerId": 1,
-          "locationId": 2
-      },
-      {
-        "id": 2,
-        "name": "Kaos",
-        "breed": "Aussie-Shep",
-        "customerId": 2,
-        "locationId": 1
+    {
+      "id": 1,
+      "name": "Doodles",
+      "breed": "Poodle",
+      "customerId": 1,
+      "locationId": 2
+    },
+    {
+      "id": 2,
+      "name": "Kaos",
+      "breed": "Aussie-Shep",
+      "customerId": 2,
+      "locationId": 1
     },
     {
       "id": 3,
@@ -20,52 +20,73 @@
       "breed": "Basset",
       "customerId": 3,
       "locationId": 2
-  }
+    }
   ],
   "customers": [
-      {
-        "id": 1,
-        "name": "Hannah Hall",
-        "address": "7002 Chestnut Ct"
-      },
-      {
-        "id": 2,
-        "name": "Monica Kay",
-        "address": "555 Old Hickory Blvd"
-      },
-      {
-        "id": 3,
-        "name": "Ryan Citrino",
-        "address": "444 Eastland Dr"
-      }
+    {
+      "id": 1,
+      "name": "Hannah Hall",
+      "address": "7002 Chestnut Ct"
+    },
+    {
+      "id": 2,
+      "name": "Monica Kay",
+      "address": "555 Old Hickory Blvd"
+    },
+    {
+      "id": 3,
+      "name": "Ryan Citrino",
+      "address": "444 Eastland Dr"
+    }
   ],
   "employees": [
     {
       "id": 1,
       "name": "Mario Kart",
-      "address": "7002 Rainbow Road"
+      "animalId": 2,
+      "locationId": 1
     },
     {
       "id": 2,
-      "name": "Mark Rufullo",
-      "address": "222 Vape Station"
+      "name": "Mark Ruffullo",
+      "animalId": 2,
+      "locationId": 1
     },
     {
       "id": 3,
       "name": "Luke Bryan",
-      "address": "123 No Way"
+      "locationId": 1,
+      "animalId": 2
+    },
+    {
+      "name": " Sarah Anderson",
+      "locationId": 1,
+      "animalId": 2,
+      "id": 4
+    },
+    {
+      "name": "Sally Fields",
+      "locationId": 2,
+      "animalId": 3,
+      "id": 5
+    },
+    {
+      "name": "Bill Hillsman",
+      "locationId": 2,
+      "animalId": 3,
+      "id": 6
     }
   ],
   "locations": [
-      {
-          "id": 1,
-          "name": "Nashville North",
-          "address": "8422 Johnson Pike"
-      },
-      {
-          "id": 2,
-          "name": "Nashville South",
-          "address": "209 Emory Drive"
-      }
+    {
+      "id": 1,
+      "name": "Nashville North",
+      "address": "8422 Johnson Pike"
+    },
+    {
+      "id": 2,
+      "name": "Nashville South",
+      "address": "209 Emory Drive"
+    }
   ]
 }
