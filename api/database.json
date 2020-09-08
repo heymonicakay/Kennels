@@ -37,6 +37,12 @@
       "id": 3,
       "name": "Ryan Citrino",
       "address": "444 Eastland Dr"
+    },
+    {
+      "email": "monica@monica.com",
+      "password": "me",
+      "name": "Monica Kay",
+      "id": 4
     }
   ],
   "employees": [

@@ -25,19 +25,19 @@ export const ApplicationViews = (props) => {
           <EmployeeProvider>
             <CustomerProvider>
 
-              <Route path="/animals" render={
+              <Route exact path="/animals" render={
                 props=> <div className="animal-container">
                   <AnimalList { ...props} />
                 </div>
               } />
 
-              <Route path="/animals/create" render={
+              <Route exact path="/animals/create" render={
                 props=> <div className="animal-form__container">
                   <AnimalForm { ...props} />
                 </div>
               } />
 
-              <Route path="/customers">
+              <Route exact path="/customers">
                 <div className="customer-container">
                   <CustomerList />
                 </div>
