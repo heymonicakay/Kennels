@@ -14,7 +14,6 @@ export const AnimalForm = (props) => {
   const name = useRef(null)
   const breed = useRef(null)
   const location = useRef(null)
-  const employee = useRef(null)
   const owner = useRef(null)
 
   useEffect(() => {
@@ -23,7 +22,6 @@ export const AnimalForm = (props) => {
 
   const constructNewAnimal = () => {
     const locationId = parseInt(location.current.value)
-    const employeeId = parseInt(employee.current.value)
     const ownerId = parseInt(owner.current.value)
 
     if (locationId === 0) {
@@ -33,7 +31,6 @@ export const AnimalForm = (props) => {
         name: name.current.value,
         breed: breed.current.value,
         locationId,
-        employeeId,
         ownerId
       })
       .then(() => props.history.push("/animals"))
@@ -55,17 +52,6 @@ export const AnimalForm = (props) => {
           <input type="text" id="animalBreed" ref={breed} required autoFocus className="form-control" placeholder="Animal breed" />
         </div>
         <div className="form-group">
-          <label htmlFor="location">Assign to location: </label>
-          <select defaultValue="" name="location" ref={location} id="animalLocation" className="form-control" >
-              <option value="0">Select a location</option>
-              {locations.map(l => (
-                  <option key={l.id} value={l.id}>
-                      {l.name}
-                  </option>
-              ))}
-          </select>
-        </div>
-        <div className="form-group">
           <label htmlFor="owner">Assign to owner: </label>
           <select defaultValue="" name="owner" ref={owner} id="animalOwner" className="form-control" >
               <option value="0">Select an owner</option>
@@ -77,15 +63,15 @@ export const AnimalForm = (props) => {
           </select>
         </div>
         <div className="form-group">
-            <label htmlFor="employee">Caretaker: </label>
-            <select defaultValue="" name="employee" ref={employee} id="animalEmployee" className="form-control" >
-                <option value="0">Select an employee</option>
-                {employees.map(e => (
-                    <option key={e.id} value={e.id}>
-                        {e.name}
-                    </option>
-                ))}
-            </select>
+          <label htmlFor="location">Assign to Kennel: </label>
+          <select defaultValue="" name="location" ref={location} id="animalLocation" className="form-control" >
+              <option value="0">Select a location</option>
+              {locations.map(l => (
+                  <option key={l.id} value={l.id}>
+                      {l.name}
+                  </option>
+              ))}
+          </select>
         </div>
         <button className="btn save-btn save-btn--pet" type="submit"
             onClick={e => {

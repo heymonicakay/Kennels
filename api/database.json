@@ -75,6 +75,12 @@
       "locationId": 2,
       "animalId": 3,
       "id": 6
+    },
+    {
+      "name": "Sally Fields",
+      "locationId": 2,
+      "animalId": 2,
+      "id": 7
     }
   ],
   "locations": [

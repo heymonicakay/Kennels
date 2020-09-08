@@ -52,7 +52,7 @@ export const ApplicationViews = (props) => {
         <LocationProvider>
           <AnimalProvider>
 
-            <Route path="/employees" render={
+            <Route exact path="/employees" render={
             props => <div className="employee-container">
               <EmployeeList {...props} />
               </div>
